@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const MidtermSchema = mongoose.Schema(
   {
     name: String,
-    age: String,
+    age: Number,
     major: String
   },
   {
