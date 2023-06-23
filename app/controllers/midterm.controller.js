@@ -106,8 +106,9 @@ exports.update = (req, res) => {
     Midterm.findByIdAndUpdate(
         req.params.id,
         {
-            name: req.body.name || "Untitled",
-            description: req.body.description,
+            name: req.body.name || 'Untitled',
+            age: req.body.age,
+            major: req.body.major
         },
         { new: true }
     ).then(
